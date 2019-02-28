@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/style/styles.css">
+
+    <title>Chirie Share</title>
+</head>
+<body>
+
+<span id="info" class="notification slideDown">Adaugat la favorite</span>
+
+<header>
+    <nav>
+        <span><a href="index.html" id="back"></a></span>
+        <a href="index.html">ChirieShare</a>
+        <a href="intra_in_cont.html" class="right">Intra in cont</a>
+        <a href="tip_anunt.html" class="right">Adauga anunt</a>
+    </nav>         
+</header>
+
+
+<main class="section bg-city">
+    <span> <!--just to center things --> </span>
+    <form class="form" action="">
+        <div class="margin-top1"></div>
+        <div class="margin-top1"></div>
+                
+        <h5 class="margin-left1">Intră in cont:</h5>
+        <hr>
+        <div class="margin-bottom1"></div>
+        <label class="none" id="nume">
+            <span>Nume:</span>
+            <input class="bold" type="text" name="">
+        </label>
+
+        <label>
+            <span>Email:</span>
+            <input class="bold" type="text" name="">
+        </label>
+
+        <label>
+            <span>Parolă</span>
+            <input class="bold" type="password" name="">
+        </label>
+
+        <label class="none" id="cpass">
+            <span>Confirmă Parolă</span>
+            <input class="bold" type="password" name="">
+            <hr>
+        </label>
+
+
+        <div class="margin-left1 none" id="tc">
+           
+            <input type="checkbox" id="termeniconditii" name="balcon">
+            <label for="termeniconditii">Sunt de acord cu <a href="">Termenii şi Condiţiile</a></label>        
+        </div>
+
+        <input type="submit" value="Autentificare" class="btn-big action">
+        <hr>
+        <input type="submit" value="Conectare cu Facebook" class="btn-big">
+
+        
+
+        <div class="margin-left1 margin-top1 margin-right1 margin-bottom2 section" id="crac">
+            <span for="termeniconditii">Nu ai cont chirieshare.ro? <a href="" id="create_account">Creează-ţi cont</a></span>      
+        </div>
+    
+    
+
+    </form>
+    <span> <!--just to center things --> </span>
+    </main>
+
+    
+
+<footer>
+
+    <div class="footer-grid">
+        <a href="">Termeni si Conditii</a>
+        <a href="">Politica Cookie</a>
+        <a href="">Politica de Confidentialitate</a>
+        <a href="">Despre noi</a>
+        <a href="">Contact</a>
+    </div>
+
+    <p class="copyright">2019 Climente Alin, all rights reserved.</p>
+
+</footer> 
+
+
+
+
+<script src="assets/style/scripts.js"></script>
+
+
+<script>
+// Alert user to use chrome or firefox
+function checkBrowser() {
+    var browser = navigator.userAgent;
+
+    if (!((browser.indexOf("Firefox") > -1) || (browser.indexOf("Chrome") > -1))){
+        alert("Functioneaza doar cu Chrome sau Firefox!");
+        window.open("https://www.mozilla.org/ro/firefox/new/","_self")
+    }
+}
+
+document.body.onload = checkBrowser;
+
+</script>
+
+
+</body>
+</html>
