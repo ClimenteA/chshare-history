@@ -1,0 +1,27 @@
+/* Medium screens */
+@media only screen and (min-width: 992px) {
+    .card-image{
+        height: 12em; /* Your height here */
+        overflow: hidden;
+    }
+
+    .filters {
+        height: 100%;
+        position: relative;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+}
+
+
+
+.price {
+    /*Now quite half way between card image and card content...needs some work */
+    position: relative;
+    bottom: 2em;
+    padding-top: 1%;
+    padding-right: 6%;
+    padding-bottom: 1%;
+    padding-left: 6%;
+    
+}

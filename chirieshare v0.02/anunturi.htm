@@ -1,0 +1,401 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/margin.css"/>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="assets/js/materialize.js"></script>
+    <!--Init materialize elemets with js -->
+    <script type="text/javascript" src="assets/js/init_materialize.js"></script>
+    <title>Cauta anunt</title>
+
+</head>
+
+<body>
+
+
+<nav class="nav-wraper teal margin-bottom-50">       
+    <div class="container">
+        <a href="#" class="brand-logo teal">chirieShare</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a class="btn teal lighten-2" href="#">Adauga anunt</a></li>
+            <li><a class="btn teal lighten-2" href="#">Logheaza-te</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="row">
+
+    <!--Filter part -->
+    <div class="col s2">
+        <div class="row">
+
+                <ul class="collapsible">
+
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">place</i>
+                            <span>Informatii de baza</span>
+                        </div>
+
+                        <div class="collapsible-body">
+                            <label for="localitate"><span class="black-text">Localitatea?</span></label>
+                            <input id="localitate" type="text" placeholder="Cluj, Iasi, Bucuresti, Timisoara..">    
+
+                            <label for="zona"><span class="black-text">Zona?</span></label>
+                            <input id="zona" type="text" placeholder="Reper cunoscut in orasul ales">
+
+                            <label for="pret"><span class="black-text">Pret?</span></label>
+                            <input type="number" id="pret" placeholder="In euro">
+
+                            <label for="tipimobil"><span class="black-text">Tip imobil</span></label>
+                            <select id="tipimobil">
+                                <option value="" disabled selected>Selecteaza optiune</option>
+                                <option value="1 camera">Apartament 1 camera</option>
+                                <option value="2 camere">Apartament 2 camere</option>
+                                <option value="3 camere">Apartament 3 camere</option>
+                                <option value="casaVila">Casa/Vila</option>
+                            </select>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">sentiment_satisfied</i>
+                            <span>Locuinte la share?</span>
+                        </div>
+
+                        <div class="collapsible-body">
+                            <label>
+                                <input type="checkbox"  id="lashare"/>
+                                <span class="black-text">Locuinte la share</span>
+                            </label>
+
+                            <div class="margin-top-20"></div>
+
+                            <ul class="collapsible">
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">wc</i>
+                                        <span>Alege optiune</span>
+                                    </div>
+
+                                    <div class="collapsible-body">
+                                        <label>
+                                            <input name="gen" type="radio" checked/>
+                                            <span class="black-text">Cu oricine</span>
+                                        </label>
+            
+                                        <label>
+                                            <input name="gen" type="radio"/>
+                                            <span class="black-text">Doar fete</span>
+                                        </label>
+                                        
+                                        <label>
+                                            <input name="gen" type="radio"/>
+                                            <span class="black-text">Doar baieti</span>
+                                        </label>
+            
+                                        <label>
+                                            <input name="gen" type="radio"/>
+                                            <span class="black-text">Doar cupluri</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">view_day</i>
+                            <span>Etaj</span>
+                        </div>
+                        <div class="collapsible-body">
+                            <div class="row">
+
+                                <div class="col s12">
+                                    <label>
+                                        <input name="etaj" type="radio"/>
+                                        <span class="black-text">Nu conteaza etajul</span>
+                                    </label>
+                                </div>
+
+                                <div class="col s12">
+                                    <label>
+                                        <input name="etaj" type="radio"/>
+                                        <span class="black-text">Etaj 1</span>
+                                    </label>
+                                </div>
+
+                                <div class="col s12">
+                                    <label>
+                                        <input name="etaj" type="radio"/>
+                                        <span class="black-text">Etaj 2</span>
+                                    </label>
+                                </div>
+
+
+                                <div class="col s12">
+                                    <label>
+                                        <input name="etaj" type="radio"/>
+                                        <span class="black-text">Etaj 3</span>
+                                    </label>
+                                </div>
+
+                                <div class="col s12">
+                                    <label>
+                                        <input name="etaj" type="radio"/>
+                                        <span class="black-text">Etaj 4+</span>
+                                    </label>
+                                </div>
+
+                                <div class="col s12">
+                                    <label>
+                                        <input name="etaj" type="radio"/>
+                                        <span class="black-text">Parter</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">weekend</i>
+                            <span>Detalii interior</span>
+                        </div>
+                        <div class="collapsible-body">
+                            <div class="row">
+                                <div class="col s12">
+                                    <label>
+                                        <input name="mobilat" type="radio"/>
+                                        <span class="black-text">Mobilat</span>
+                                    </label>
+                                </div>
+
+                                <div class="col s12">
+                                    <label>
+                                        <input name="mobilat" type="radio"/>
+                                        <span class="black-text">Nemobilat</span>
+                                    </label>
+                                </div>
+
+                                <div class="col s12 margin-top-20">
+                                    <label>
+                                        <input name="compartimentare" type="radio"/>
+                                        <span class="black-text">Decomandat</span>
+                                    </label>
+                                </div>
+
+                                <div class="col s12">
+                                    <label>
+                                        <input name="compartimentare" type="radio"/>
+                                        <span class="black-text">Semidecomandat</span>
+                                    </label>
+                                </div>
+
+                                <div class="col s12">
+                                    <label>
+                                        <input name="compartimentare" type="radio"/>
+                                        <span class="black-text">Altceva</span>
+                                    </label>
+                                </div>
+
+                                <div class="col s12 margin-top-20">
+                                    <label>
+                                        <input name="spatiu" type="radio"/>
+                                        <span class="black-text">Spatiu locuinta mic</span>
+                                    </label>
+                                </div>
+
+                                <div class="col s12">
+                                    <label>
+                                        <input name="spatiu" type="radio"/>
+                                        <span class="black-text">Spatiu locuinta mediu</span>
+                                    </label>
+                                </div>
+
+                                <div class="col s12">
+                                    <label>
+                                        <input name="spatiu" type="radio"/>
+                                        <span class="black-text">Spatiu locuinta mare</span>
+                                    </label>
+                                </div>
+
+                                
+                                <div class="col s12 margin-top-20">
+                                    <label>
+                                        <input name="animaleDeCompanie" type="radio"/>
+                                        <span class="black-text">Accept animale companie</span>
+                                    </label>
+                                </div>
+                        
+                                <div class="col s12">
+                                    <label>
+                                        <input name="animaleDeCompanie" type="radio"/>
+                                        <span class="black-text">Nu accept animale companie</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">playlist_add</i>
+                                    <span>Alte preferinte</span>
+                                </div>
+                                <div class="collapsible-body">
+                                
+
+                                    <div class="col s12 margin-top-20">
+                                        <label>
+                                            <input name="izolat" type="checkbox"/>
+                                            <span class="black-text">Izolat termic</span>
+                                        </label>
+                                    </div>
+                        
+                        
+                        
+                                    <div class="col s12">
+                                        <label>
+                                            <input name="balcon" type="checkbox"/>
+                                            <span class="black-text">Cu balcon</span>
+                                        </label>
+                                    </div>
+                        
+                        
+                                    <div class="col s12">
+                                        <label>
+                                            <input type="checkbox" id="ct"/>
+                                            <span class="black-text">Centrala termica</span>
+                                        </label>
+                                    </div>
+                        
+                                    <div class="col s12">
+                                        <label>
+                                            <input type="checkbox"  id="ac"/>
+                                            <span class="black-text">Aer conditionat</span>
+                                        </label>
+                                    </div>
+                        
+                                    <div class="col s12">
+                                        <label>
+                                            <input type="checkbox" id="accessCabluTv"/>
+                                            <span class="black-text">Access cablu Tv/Net</span>
+                                        </label>
+                                    </div>
+                        
+                                    <div class="col s12 margin-top-20">
+                                        <label>
+                                            <input type="checkbox" id="aragaz"/>
+                                            <span class="black-text">Aragaz</span>
+                                        </label>
+                                    </div>
+                            
+                                    <div class="col s12">
+                                        <label>
+                                            <input type="checkbox" id="hota"/>
+                                            <span class="black-text">Hota</span>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="col s12">
+                                        <label>
+                                            <input type="checkbox" id="frigider"/>
+                                            <span class="black-text">Frigider</span>
+                                        </label>
+                                    </div>
+                            
+                                    <div class="col s12">
+                                        <label>
+                                            <input type="checkbox"  id="masinadespalat"/>
+                                            <span class="black-text">Masina de spalat</span>
+                                        </label>
+                                    </div>
+                            
+                                    <div class="col s12">
+                                        <label>
+                                            <input type="checkbox"  id="cuptormicrounde"/>
+                                            <span class="black-text">Cuptor microunde</span>
+                                        </label>
+                                    </div>   
+                                    
+                                    <div class="col s12">
+                                        <label>
+                                            <input type="checkbox"  id="aspirator"/>
+                                            <span class="black-text">Aspirator</span>
+                                        </label>
+                                    </div>
+                        
+                                    <div class="col s12">
+                                        <label>
+                                            <input type="checkbox"  id="televizor"/>
+                                            <span class="black-text">Televizor</span>
+                                        </label>
+                                    </div>
+                        
+                        
+                                    <div class="col s12 margin-top-20">
+                                        <label>
+                                            <input type="checkbox"  id="supermarchetAproape"/>
+                                            <span class="black-text">Aproape de supermarchet</span>
+                                        </label>
+                                    </div>
+                            
+                                    <div class="col s12">
+                                        <label>
+                                            <input type="checkbox"  id="mijloaceDeTransport"/>
+                                            <span class="black-text">Mijloace de transport</span>
+                                        </label>
+                                    </div>
+                            
+                                    
+                                    <div class="col s12">
+                                        <label>
+                                            <input type="checkbox"  id="supermarchet"/>
+                                            <span class="black-text">Usor de gasit loc de parcare</span>
+                                        </label>
+                                    </div>
+                                
+                                </div>
+                            </li>
+
+                        </div>
+                    </li>
+                </ul>
+
+
+
+<!-- 
+<li>
+<div class="collapsible-header"><i class="material-icons">view_day</i>
+<span>Etaj</span>
+</div>
+<div class="collapsible-body">
+
+</div>
+</li>
+
+-->
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Footer -->
+
+    </body>
+</html>

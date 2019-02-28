@@ -1,0 +1,494 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/margin.css"/>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="assets/js/materialize.js"></script>
+    <!--Init materialize elemets with js -->
+    <script type="text/javascript" src="assets/js/init_materialize.js"></script>
+    <title>Adauga anunt</title>
+
+</head>
+
+<body>
+
+<nav class="nav-wraper teal margin-bottom-50">
+    <div class="container">
+        <a href="#" class="brand-logo teal">chirieShare</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a class="btn teal lighten-2" href="#">Adauga anunt</a></li>
+            <li><a class="btn teal lighten-2" href="#">Logheaza-te</a></li>
+        </ul>
+    </div>
+</nav>
+            
+
+</br>
+
+<!--start container -->
+<div class="container">
+
+    <!--Start section sumar anunt -->
+    <div class="row">
+        <div class="col s12">
+            <h6>Informatii de baza</h6>
+            <div class="divider"></div>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+        
+    <!--Localitate zona pret -->
+    <div class="row">
+
+        <div class="col s4 offset-s1">
+            <label for="localitate"><span class="black-text">Localitatea?</span></label>
+            <input id="localitate" type="text" placeholder="Cluj, Iasi, Bucuresti, Timisoara..">    
+        </div>
+
+        <div class="col s4 offset-s1">
+            <label for="zona"><span class="black-text">Zona?</span></label>
+            <input id="zona" type="text" placeholder="Reper cunoscut in orasul ales">
+        </div>
+
+    </div>
+
+
+    <div class="row">
+        <div class="col s4 offset-s1">
+            <label for="tipimobil"><span class="black-text">Tip imobil</span></label>
+            <select id="tipimobil">
+                <option value="" disabled selected>Selecteaza optiune</option>
+                <option value="1 camera">Apartament 1 camera</option>
+                <option value="2 camere">Apartament 2 camere</option>
+                <option value="3 camere">Apartament 3 camere</option>
+                <option value="casaVila">Casa/Vila</option>
+            </select>
+        </div>
+        
+        <div class="col s4 offset-s1">
+            <label for="pret"><span class="black-text">Pret?</span></label>
+            <input type="number" id="pret" placeholder="In euro">
+        </div>
+    </div>
+
+    <br>
+    
+    <div class="row">
+        <div class="col s12">
+            <h6>Date de contact</h6>
+            <div class="divider"></div>
+        </div>
+    </div>
+    <br>
+
+
+    <div class="row">
+        <div class="row">
+            <div class="col s4 offset-s1">
+                <label for="nume"><span class="black-text">Nume</span></label>
+                <input id="nume" type="text" placeholder="Popesco Daniel">    
+            </div>
+    
+            <div class="col s4 offset-s1">
+                <label for="email"><span class="black-text">Email/Telefon</span></label>
+                <input id="zona" type="text" placeholder="popescodaniel@gmail.com sau 0722XXX">
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="row">
+        <div class="col s12">
+            <h6>Adauga imagini</h6>
+            <div class="divider"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s9 offset-s1">
+            <div class="file-field input-field">
+                <div class="btn-small teal lighten-2">
+                    <span>Cauta</span>
+                    <input type="file" multiple>
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" placeholder="Doar 3 imagini '.jpg' sau '.png' sunt acceptate">
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <!--Optiuni specifice pentru acest site-->
+    <br>
+    <div class="row">
+        <div class="col s12">
+            <h6>Cauti colegi de apartament?</h6>
+            <div class="divider"></div>
+        </div>    
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col s4 offset-s1">
+            <label>
+                <input type="checkbox"  id="lashare"/>
+                <span class="black-text">Locuinta este la share (vreau sa o impart cu alti colegi)</span>
+            </label>
+        </div>
+
+        <div class="col s4 offset-s1">
+            <div class="col">
+                <label>
+                    <input name="gen" type="radio" checked />
+                    <span class="black-text">Fete/Baieti</span>
+                </label>
+            </div>
+    
+            <div class="col">
+                <label>
+                    <input name="gen" type="radio"/>
+                    <span class="black-text">Doar fete</span>
+                </label>
+            </div>
+    
+            <div class="col">
+                <label>
+                    <input name="gen" type="radio"/>
+                    <span class="black-text">Doar baieti</span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+
+    <!--End section sumar anunt -->
+
+
+    <br>
+    <div class="row">
+        <div class="col s12">
+            <h6>Bifeaza facilitatile locuintei:</h6>
+            <div class="divider"></div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col">
+            <label>
+                <input name="etaj" type="radio"/>
+                <span class="black-text">Parter</span>
+            </label>
+        </div>
+
+        <div class="col">
+            <label>
+                <input name="etaj" type="radio"/>
+                <span class="black-text">Etaj 1</span>
+            </label>
+        </div>
+    
+        <div class="col">
+            <label>
+                <input name="etaj" type="radio"/>
+                <span class="black-text">Etaj 2</span>
+            </label>
+        </div>
+    
+        <div class="col">
+            <label>
+                <input name="etaj" type="radio"/>
+                <span class="black-text">Etaj 3</span>
+            </label>
+        </div>
+    
+        <div class="col">
+            <label>
+                <input name="etaj" type="radio"/>
+                <span class="black-text">Etaj 4+</span>
+            </label>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+    <div class="row margin-top-20">
+        <div class="col">
+            <label>
+                <input name="mobilat" type="radio"/>
+                <span class="black-text">Mobilat</span>
+            </label>
+        </div>
+
+        <div class="col">
+            <label>
+                <input name="mobilat" type="radio"/>
+                <span class="black-text">Nemobilat</span>
+            </label>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+        <div class="row margin-top-20">    
+            <div class="col">
+                <label>
+                    <input name="compartimentare" type="radio"/>
+                    <span class="black-text">Decomandat</span>
+                </label>
+            </div>
+    
+            <div class="col">
+                <label>
+                    <input name="compartimentare" type="radio"/>
+                    <span class="black-text">Semidecomandat</span>
+                </label>
+            </div>
+            <div class="col">
+                <label>
+                    <input name="compartimentare" type="radio"/>
+                    <span class="black-text">Nu se aplica</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+        <div class="row margin-top-20">
+
+            <div class="col">
+                <label>
+                    <input name="spatiu" type="radio"/>
+                    <span class="black-text">Spatiu locuinta mic</span>
+                </label>
+            </div>
+    
+            <div class="col">
+                <label>
+                    <input name="spatiu" type="radio"/>
+                    <span class="black-text">Spatiu locuinta mediu</span>
+                </label>
+            </div>
+
+
+            <div class="col">
+                <label>
+                    <input name="spatiu" type="radio"/>
+                    <span class="black-text">Spatiu locuinta mare</span>
+                </label>
+            </div>
+    
+        </div>
+
+        <div class="divider"></div>
+        <div class="row margin-top-20">
+            <div class="col">
+                <label>
+                    <input name="animaleDeCompanie" type="radio"/>
+                    <span class="black-text">Accept animale companie</span>
+                </label>
+            </div>
+    
+            <div class="col">
+                <label>
+                    <input name="animaleDeCompanie" type="radio"/>
+                    <span class="black-text">Nu accept animale companie</span>
+                </label>
+            </div>
+        </div>
+
+
+        <div class="divider"></div>
+        <div class="row margin-top-20">
+            <div class="col">
+                <label>
+                    <input name="izolat" type="checkbox"/>
+                    <span class="black-text">Izolat termic</span>
+                </label>
+            </div>
+
+            <div class="col">
+                <label>
+                    <input name="balcon" type="checkbox"/>
+                    <span class="black-text">Cu balcon</span>
+                </label>
+            </div>
+
+            <div class="col">
+                <label>
+                    <input type="checkbox" id="ct"/>
+                    <span class="black-text">Centrala termica</span>
+                </label>
+            </div>
+
+            <div class="col">
+                <label>
+                    <input type="checkbox"  id="ac"/>
+                    <span class="black-text">Aer conditionat</span>
+                </label>
+            </div>
+
+            <div class="col">
+                <label>
+                    <input type="checkbox" id="accessCabluTv"/>
+                    <span class="black-text">Access cablu Tv/Net</span>
+                </label>
+            </div>
+
+        </div>
+
+        <div class="divider"></div>
+        <div class="row margin-top-20">
+
+            <div class="col">
+                <label>
+                    <input type="checkbox" id="aragaz"/>
+                    <span class="black-text">Aragaz</span>
+                </label>
+            </div>
+    
+            <div class="col">
+                <label>
+                    <input type="checkbox" id="hota"/>
+                    <span class="black-text">Hota</span>
+                </label>
+            </div>
+            
+            <div class="col">
+                <label>
+                    <input type="checkbox" id="frigider"/>
+                    <span class="black-text">Frigider</span>
+                </label>
+            </div>
+    
+            <div class="col">
+                <label>
+                    <input type="checkbox"  id="masinadespalat"/>
+                    <span class="black-text">Masina de spalat</span>
+                </label>
+            </div>
+    
+            <div class="col">
+                <label>
+                    <input type="checkbox"  id="cuptormicrounde"/>
+                    <span class="black-text">Cuptor microunde</span>
+                </label>
+            </div>   
+            
+            <div class="col">
+                <label>
+                    <input type="checkbox"  id="aspirator"/>
+                    <span class="black-text">Aspirator</span>
+                </label>
+            </div>
+
+            <div class="col">
+                <label>
+                    <input type="checkbox"  id="televizor"/>
+                    <span class="black-text">Televizor</span>
+                </label>
+            </div>
+        </div>
+
+
+        <div class="divider"></div>
+        <div class="row margin-top-20">
+
+            <div class="col">
+                <label>
+                    <input type="checkbox"  id="supermarchetAproape"/>
+                    <span class="black-text">Aproape de supermarchet</span>
+                </label>
+            </div>
+    
+            <div class="col">
+                <label>
+                    <input type="checkbox"  id="mijloaceDeTransport"/>
+                    <span class="black-text">Mijloace de transport</span>
+                </label>
+            </div>
+    
+            
+            <div class="col">
+                <label>
+                    <input type="checkbox"  id="supermarchet"/>
+                    <span class="black-text">Usor de gasit loc de parcare</span>
+                </label>
+            </div>
+
+        </div>
+
+        
+        <div class="row margin-top-50">
+            <div class="col s3">
+                <h6>Adauga alte facilitati:</h6>
+            </div>
+            <div class="chips">
+                <div class="chip">
+                    Tag
+                    <i class="close material-icons">close</i>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <div class="center">
+            <button class="btn-large">Posteaza anuntul!</button>
+        </div>
+        
+
+
+        <p>Arata cat la suta din form este completat. aduna informatiile cu js</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--end container -->
+</div>
+
+
+        
+<footer class="page-footer teal margin-top-400">
+        <div class="container">
+        <div class="row">
+        <div class="col l6 s12">
+        <h5 class="white-text">chirieShare</h5>
+        <p class="grey-text text-lighten-4">Gaseste mai usor chirii sau colegi de camera!</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="footer-copyright">
+        <div class="container">
+        © 2018 Copyright Climente Alin
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+        </div>
+        </footer>
+</body>
+</html>
