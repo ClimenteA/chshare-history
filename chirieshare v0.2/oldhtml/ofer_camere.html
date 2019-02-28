@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/style/styles.css">
+    <title>Adauga anunt</title>
+</head>
+<body class="bg-city">
+
+<header>
+    <nav>
+        <span><a href="index.html" id="back"></a></span>
+        <a href="index.html">ChirieShare</a>
+        <a href="intra_in_cont.html" class="right">Intra in cont</a>
+        <a href="tip_anunt.html" class="right">Adauga anunt</a>
+    </nav>     
+</header>
+
+
+<main class="section margin-top1">
+
+    <form class="form" action="">
+        <div class="margin-top1"></div>
+        <div class="margin-top1"></div>
+              
+        <h5 class="margin-left1">Locaţie:</h5>
+        <hr>
+        <div class="margin-bottom1"></div>
+        <label>
+            <span>Localitate</span>
+            <input class="bold" type="text" name="">
+        </label>
+    
+        <label>
+            <span>Zonă</span>
+            <input class="bold" type="text" name="">
+        </label>
+
+        
+        <div class="margin-bottom1"></div>
+        <h5 class="margin-left1 euro">Preţ </h5>
+        <hr>
+        <div class="margin-bottom1"></div>
+     
+        <div>
+            <label>
+                <span>Lunar</span>
+                <input class="bold" type="text" name="">
+            </label>
+    
+            <label>
+                <span>Garanţie </span>
+                <input class="bold" type="text" name="" value="0">
+            </label>
+    
+            <label>
+                <span>Avans </span>
+                <input class="bold" type="text" name="" value="0">
+            </label>    
+        </div>
+        
+
+
+        <div class="margin-bottom1"></div>
+        <h5 class="margin-left1">Descriere apartament / locuinţă:</h5>
+        <hr>
+        <div class="margin-bottom1"></div>
+
+        <div class="grid2">
+
+            <div class="margin-left1  section">
+
+                <input type="radio" id="1ap" name="apartament">
+                <label for="1ap">1 cameră</label>
+            
+                <input type="radio" id="2ap" name="apartament">
+                <label for="2ap">2 camere</label> 
+    
+                <input type="radio" id="3ap" name="apartament">
+                <label for="3ap">3 camere</label> 
+                
+                <input type="radio" id="4ap" name="apartament">
+                <label for="4ap">4 camere</label> 
+    
+                <input type="radio" id="5ap" name="apartament">
+                <label for="5ap">5+ camere</label> 
+                
+                <hr>
+            </div>
+    
+            <div class="margin-left1 section">
+    
+                    <input type="radio" id="decomandat" name="compartimentare">
+                    <label for="decomandat">Decomandat</label>        
+                
+                    <input type="radio" id="semidecomandat" name="compartimentare">
+                    <label for="semidecomandat">Semidecomandat</label>         
+                    
+                    <input type="radio" id="nedecomandat" name="compartimentare">
+                    <label for="nedecomandat">Nedecomandat</label> 
+    
+                    <input type="radio" id="circular" name="compartimentare">
+                    <label for="circular">Circular</label> 
+    
+                    <input type="radio" id="altceva" name="compartimentare">
+                    <label for="altceva">Altceva</label> 
+                <hr>
+            </div>
+    
+        
+
+            <div class="margin-left1 margin-top1 section">
+    
+                <input type="checkbox" id="cubalcon" name="balcon">
+                <label for="cubalcon">Cu balcon</label>
+
+                <input type="checkbox" id="mobilat" name="mobilat">
+                <label for="mobilat">Mobilat complet</label>
+
+                <input type="checkbox" id="centralatermica" name="centralatermica">
+                <label for="centralatermica">Centrală termică</label>
+
+                <hr>
+            </div>
+
+            <div class="margin-left1 margin-top1 section">
+
+                <input type="checkbox" id="frigider" name="frigider">
+                <label for="frigider">Frigider</label>
+
+                <input type="checkbox" id="aragaz" name="aragaz">
+                <label for="aragaz">Aragaz</label>
+
+                <input type="checkbox" id="masinadespalat" name="masinadespalat">
+                <label for="masinadespalat">Maşină de spălat</label>
+                <hr>
+            </div>
+
+
+        </div>
+
+
+        <div class="margin-bottom1 margin-top1"></div>
+        <h5 class="margin-left1">Preferinţe locatari:</h5>
+        <hr>
+        <div class="margin-bottom1"></div>
+        
+        <div class="grid2">
+
+
+            <div class="margin-left1 section">
+
+                <input type="radio" id="nufumat" name="fumat">
+                <label for="nufumat">Fumatul nu este permis</label>
+
+                <input type="radio" id="okfumat" name="fumat">
+                <label for="okfumat">Fumatul este permis oriunde</label>
+
+                <input type="radio" id="bucatariefumat" name="fumat" checked>
+                <label for="bucatariefumat">Fumatul permis în bucătărie/balcon</label>
+
+                <hr>
+            </div>
+
+            <div class="margin-left1 section">
+
+                    <input type="radio" id="doarfete" name="gen">
+                    <label for="doarfete">Doar fete</label>        
+                
+                    <input type="radio" id="doarbaieti" name="gen">
+                    <label for="doarbaieti">Doar băieţi</label>         
+                    
+                    <input type="radio" id="fetebaieti" name="gen" checked>
+                    <label for="fetebaieti">Fete / Băieţi</label> 
+
+                <hr>
+            </div>
+
+        
+
+            <div class="margin-left1 margin-top1 section">
+
+                <input type="checkbox" id="v1830" name="v1830">
+                <label for="v1830">Vărstă între 18-35 ani</label>        
+            
+                <input type="checkbox" id="v3045" name="v3045">
+                <label for="v3045">Vărstă între 35-45 ani</label>         
+                
+                <input type="checkbox" id="v45XX" name="v45XX">
+                <label for="v45XX">Vărstă între 45-XX ani</label> 
+
+                <hr>
+            </div>
+
+            <div class="margin-left1 margin-top1 section">
+
+                <input type="checkbox" id="student" name="student">
+                <label for="student">Ocupaţie: Studenţi / Altceva</label>        
+            
+                <input type="checkbox" id="inschimburi" name="inschimburi">
+                <label for="inschimburi">Ocupaţie: Lucrează in 2/3/n schimburi</label>         
+                
+                <input type="checkbox" id="unschimb" name="unschimb">
+                <label for="unschimb">Ocupaţie: Lucrează un singur schimb</label> 
+
+                <hr>
+            </div>
+
+
+            <div class="margin-left1 margin-top1 section">
+
+                <input type="radio" id="acceptanimale" name="animalecompanie">
+                <label for="acceptanimale">Accept animale de companie</label>         
+            
+                <input type="radio" id="nuacceptanimale" name="animalecompanie">
+                <label for="nuacceptanimale">Nu accept animale de companie</label>          
+            
+                <hr>
+            </div>
+
+
+            <div class="margin-left1 margin-top1 section">
+
+                <input type="radio" id="sederedeterminata" name="sedere">
+                <label for="sederedeterminata">Şedere perioadă determinată</label>         
+            
+                <input type="radio" id="sederenedeterminata" name="sedere">
+                <label for="sederenedeterminata">Şedere perioadă nedeterminată</label>          
+            
+                <hr>
+            </div>
+
+        </div>
+
+
+        <div class="margin-bottom3"></div>
+        <h5 class="margin-left1">Disponibillitate:</h5>
+        <hr>
+        <div class="margin-bottom1"></div>
+        
+
+        <div class="grid2">
+
+            <div class="margin-left1 inline" id="cooldate">
+                <label class="inline" for="date">Mutare de la:</label>
+                <input class="inline relative-width flatpickr flatpickr-input active" type="date" id="date" placeholder="Alege Data.." readonly="readonly">
+            </div>
+            
+            <div class="margin-left1 inline" id="defaultdate">
+                <label class="inline" for="date-backup">Mutare:</label>
+                <input class="inline relative-width" type="date" id="date-backup">
+            </div>
+
+            <div class="block margin-left1">
+                <label for="camerelibere">Camere libere:</label>
+                <input class="relative-width" type="text" id="camerelibere">        
+            </div>
+
+            
+
+        </div>
+        
+        <div class="margin-bottom3"></div>
+        <h5 class="margin-left1">Adaugă fotografii:</h5>
+        <hr>
+        <div class="margin-bottom1"></div>
+
+        
+
+        <div class="grid2">
+
+            <div class="margin-left1">
+                <input class="inline relative-width" type="file">
+            </div>
+
+            <div class="margin-left1">
+                <input class="inline relative-width" type="file">
+            </div>
+
+            <div class="margin-left1">
+                <input class="inline relative-width" type="file">
+            </div>
+
+            <div class="margin-left1">
+                <input class="inline relative-width" type="file">
+            </div>
+            
+        </div>
+
+
+        <div class="margin-bottom3"></div>
+        <h5 class="margin-left1">Informaţii de contact:</h5>
+        <hr>
+        <div class="margin-bottom1"></div>
+
+
+        <label>
+            <span>Nume persoană</span>
+            <input type="text" name="">
+        </label>
+
+        <label>
+            <span>Număr telefon</span>
+            <input type="tel" name="">
+        </label>
+    
+        <label>
+            <span>Adresă email</span>
+            <input type="email" name="">
+        </label>
+
+        <label class="margin-left2" for="detalii">Alte detalii</label>
+        <textarea class="margin-left2" maxlength="100" name="" id="" cols="15" rows="10"></textarea>
+
+        <hr>
+        
+        <div class="margin-left1 margin-top1 section">
+            <input type="checkbox" id="termeniconditii" name="termeniconditii">
+            <label for="termeniconditii">Sunt de acord cu <a href="">Termenii şi Condiţiile</a> ChirieShare.ro</label>      
+        </div>
+
+        <input type="submit" value="Publică anunţul" class="btn-big">
+ 
+    </form>
+    
+    <div class="margin-bottom3"></div>
+    <div class="margin-bottom3"></div>
+
+</main>
+
+
+
+
+<footer>
+
+    <div class="footer-grid">
+        <a href="">Termeni si Conditii</a>
+        <a href="">Politica Cookie</a>
+        <a href="">Politica de Confidentialitate</a>
+        <a href="">Despre noi</a>
+        <a href="">Contact</a>
+    </div>
+
+    <p class="copyright">2019 Climente Alin, all rights reserved.</p>
+
+</footer> 
+
+
+<script src="assets/style/scripts.js"></script>
+<link rel="stylesheet" href="assets/style/flatpicker.css">
+<script src="assets/style/flatpicker.js"></script>
+<script src="assets/style/datefpicker.js"></script>
+
+</body>
+</html>

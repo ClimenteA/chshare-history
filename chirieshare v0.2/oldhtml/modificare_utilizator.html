@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/style/styles.css">
+    <link rel="stylesheet" href="assets/style/file-upload-with-preview.css">
+    <title>Adauga anunt</title>
+</head>
+<body class="bg-city">
+
+<!-- https://www.psychologytoday.com/us/tests/relationships/roommate-test -->
+<!-- https://www.brickunderground.com/blog/2014/07/questions_to_ask_your_potential_roommate -->
+
+<header>
+    <nav>
+        <span><a href="index.html" id="back"></a></span>
+        <a href="index.html">ChirieShare</a>
+        <a href="intra_in_cont.html" class="right">Intra in cont</a>
+        <a href="tip_anunt.html" class="right">Adauga anunt</a>
+    </nav>         
+</header>
+
+
+
+<main class="section margin-top1">
+
+    <form class="form padding1" action="">
+
+        <div class="margin-bottom2"></div>
+        <h5 class="margin-left1">Informaţii de contact:</h5>
+        <hr>
+        <div class="margin-bottom1"></div>
+
+        <label>
+            <span>Nume persoană</span>
+            <input type="text" name="">
+        </label>
+
+        <label>
+            <span>Număr telefon</span>
+            <input type="tel" name="">
+        </label>
+    
+        <label>
+            <span>Adresă email</span>
+            <input type="email" name="">
+        </label>    
+    
+
+        <h5 class="margin-left1 margin-top1 euro">Buget </h5>
+        <hr>
+        <div class="margin-bottom1"></div>
+    
+        <div>
+            <label>
+                <span>Lunar</span>
+                <input class="bold" type="text" name="">
+            </label>
+    
+            <label>
+                <span>Pentru garanţie </span>
+                <input class="bold" type="text" name="" value="0">
+            </label>
+    
+            <label>
+                <span>Pentru avans </span>
+                <input class="bold" type="text" name="" value="0">
+            </label>    
+        </div>
+        
+
+        <div class="margin-bottom1"></div>
+        <h5 class="margin-left1">Despre mine:</h5>
+        <hr>
+        <div class="margin-bottom1"></div>
+
+
+        <div class="section">                
+   
+            <div class="custom-file-container padding1" data-upload-id="myUniqueUploadId">
+                <label>Upload File <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">&times;</a></label>
+    
+                <label class="custom-file-container__custom-file" >
+                    <input type="file" class="custom-file-container__custom-file__custom-file-input" accept="*">
+                    <input type="hidden" name="MAX_FILE_SIZE" value="10485760" />
+                    <span class="custom-file-container__custom-file__custom-file-control"></span>
+                </label>
+                <div class="custom-file-container__image-preview"></div>
+            </div>
+
+
+            <label>
+                <span>Varsta</span>
+                <input class="bold" type="number" name="" min="0" max="99">
+            </label>
+        </div>
+      
+
+        <div class="margin-left1 margin-top1 section">
+            <label class="margin-left2" for="detalii">Alte detalii:</label>
+            <textarea class="margin-left2" maxlength="100" name="" id="" cols="15" rows="10"></textarea>
+        </div>
+
+        <div class="margin-bottom1"></div>
+        <h5 class="margin-left1">Pe scurt:</h5>
+        <hr>
+        <div class="margin-bottom1"></div>
+
+        <div class="grid2">
+        
+            <div class="margin-left1  section">
+
+                <input type="radio" id="std" name="ocupatie">
+                <label for="std">Sunt student</label> 
+                
+                <input type="radio" id="uns" name="ocupatie">
+                <label for="uns">Lucrez ziua</label>
+
+                <input type="radio" id="ls" name="ocupatie">
+                <label for="ls">Lucrez ziua/noaptea</label>
+
+                <input type="radio" id="alt" name="ocupatie">
+                <label for="alt">Altceva</label> 
+                
+                <hr>
+            </div>
+    
+            <div class="margin-left1 section">
+    
+                    <input type="radio" id="osap" name="curatenie">
+                    <label for="osap">Fac curatenie cel putin o data pe saptamana</label>        
+                
+                    <input type="radio" id="cat" name="curatenie">
+                    <label for="cat">Fac curatenie cel mult o data pe saptamana</label>        
+                    <hr>
+
+                    <input type="radio" id="introvertit" name="tip">
+                    <label for="introvertit">Tind spre a fi introvertit</label>         
+                    
+                    <input type="radio" id="extrovertit" name="tip">
+                    <label for="extrovertit">Tind spre a fi extrovertit</label> 
+                    
+                    <hr>
+            </div>        
+
+
+            
+            
+            <div class="margin-left1  section">
+
+                <input type="radio" id="barbat" name="gen">
+                <label for="barbat">Barbat</label> 
+                
+                <input type="radio" id="femeie" name="gen">
+                <label for="femeie">Femeie</label>
+
+                <hr>
+            </div>
+    
+            <div class="margin-left1 section">
+                <input type="radio" id="casatorit" name="starecivila">
+                <label for="casatorit">Casatorit</label>        
+                <input type="radio" id="necasatorit" name="starecivila">
+                <label for="necasatorit">Necasatorit</label>        
+                <hr>
+            </div>           
+
+        </div>
+        
+        <div class="margin-bottom3"></div>
+        <input type="submit" value="Aplică modificarile" class="btn-big">
+    
+    </form>
+    
+    <div class="margin-bottom3"></div>
+    <div class="margin-bottom3"></div>
+
+</main>
+
+
+
+
+
+
+
+<footer>
+
+    <div class="footer-grid">
+        <a href="">Termeni si Conditii</a>
+        <a href="">Politica Cookie</a>
+        <a href="">Politica de Confidentialitate</a>
+        <a href="">Despre noi</a>
+        <a href="">Contact</a>
+    </div>
+
+    <p class="copyright">2019 Climente Alin, all rights reserved.</p>
+
+</footer> 
+
+
+<script src="assets/style/scripts.js"></script>
+<script src="assets/style/file-upload-with-preview.js"></script>
+
+<script>
+    //Initialize File uploader
+    var upload = new FileUploadWithPreview('myUniqueUploadId')
+</script>
+</body>
+</html>
